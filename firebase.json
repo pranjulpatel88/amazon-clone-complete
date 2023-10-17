@@ -16,7 +16,7 @@
         "firebase-debug.log",
         "firebase-debug.*.log"
       ]
-     
+      
     },
     {
       "source": "function",
@@ -44,5 +44,19 @@
         "npm --prefix \"$RESOURCE_DIR\" run lint"
       ]
     }
-  ]
+  ],
+  "hosting": {
+    "public": "y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }

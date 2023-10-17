@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer';
 const Login = () => {
 
 
-    const app = initializeApp(firebaseConfig);
+    //  const app = initializeApp(firebaseConfig);
 
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -57,8 +57,8 @@ const Login = () => {
                         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /><br /><br />
                         <button className='sign_btn' onClick={signIn}>Sign in</button><br />
                         <p>By Signing in you agree to the AMAZON FAKE CLONE Condition of use and sale.
-                            Please see our Privacy Notice,or our Cookies notices and our interest-based ads notice.</p><br />
-
+     Please see our Privacy Notice,or our Cookies notices and our interest-based ads notice.</p><br />
+                        
                         <button onClick={signUp}>Create Your Amazon Account</button><br />
                     </div>
                 </div>
